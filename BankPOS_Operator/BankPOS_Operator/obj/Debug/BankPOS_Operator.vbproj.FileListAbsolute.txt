@@ -1,0 +1,13 @@
+C:\Users\lotfi\IoT_BankPos\BankPOS_Operator\BankPOS_Operator\bin\BankPOS_Operator.dll.config
+C:\Users\lotfi\IoT_BankPos\BankPOS_Operator\BankPOS_Operator\bin\BankPOS_Operator.dll
+C:\Users\lotfi\IoT_BankPos\BankPOS_Operator\BankPOS_Operator\bin\BankPOS_Operator.pdb
+C:\Users\lotfi\IoT_BankPos\BankPOS_Operator\BankPOS_Operator\bin\BankPOS_Operator.xml
+C:\Users\lotfi\IoT_BankPos\BankPOS_Operator\BankPOS_Operator\bin\SSP1126.PcPos.dll
+C:\Users\lotfi\IoT_BankPos\BankPOS_Operator\BankPOS_Operator\obj\Debug\BankPOS_Operator.vbproj.AssemblyReference.cache
+C:\Users\lotfi\IoT_BankPos\BankPOS_Operator\BankPOS_Operator\obj\Debug\BankPOS_Operator.Resources.resources
+C:\Users\lotfi\IoT_BankPos\BankPOS_Operator\BankPOS_Operator\obj\Debug\BankPOS_Operator.vbproj.GenerateResource.cache
+C:\Users\lotfi\IoT_BankPos\BankPOS_Operator\BankPOS_Operator\obj\Debug\BankPOS_Operator.vbproj.CoreCompileInputs.cache
+C:\Users\lotfi\IoT_BankPos\BankPOS_Operator\BankPOS_Operator\obj\Debug\BankPOS_Operator.vbproj.CopyComplete
+C:\Users\lotfi\IoT_BankPos\BankPOS_Operator\BankPOS_Operator\obj\Debug\BankPOS_Operator.dll
+C:\Users\lotfi\IoT_BankPos\BankPOS_Operator\BankPOS_Operator\obj\Debug\BankPOS_Operator.xml
+C:\Users\lotfi\IoT_BankPos\BankPOS_Operator\BankPOS_Operator\obj\Debug\BankPOS_Operator.pdb
