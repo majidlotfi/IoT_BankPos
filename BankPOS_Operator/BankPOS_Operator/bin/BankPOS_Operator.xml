@@ -37,5 +37,104 @@ BankPOS_Operator
  Returns the Asp log object.
  </summary>
 </member>
+<member name="F:BankPOS_Operator.Main._frmMain">
+<summary>
+frmMain control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:BankPOS_Operator.Main._grpNewPCPos">
+<summary>
+grpNewPCPos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:BankPOS_Operator.Main._frmNewPcPos">
+<summary>
+frmNewPcPos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:BankPOS_Operator.Main._grpNewOpr">
+<summary>
+grpNewOpr control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:BankPOS_Operator.Main._frmNewOpr">
+<summary>
+frmNewOpr control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:BankPOS_Operator.Main._pnlPreview">
+<summary>
+pnlPreview control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:BankPOS_Operator.Main._lstPcPos">
+<summary>
+lstPcPos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:BankPOS_Operator.Main._grpOprList">
+<summary>
+grpOprList control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:BankPOS_Operator.Main._lstOprList">
+<summary>
+lstOprList control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:BankPOS_Operator.Main._AdpPcPos">
+<summary>
+AdpPcPos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:BankPOS_Operator.Main._AdpOprList">
+<summary>
+AdpOprList control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 </members>
 </doc>

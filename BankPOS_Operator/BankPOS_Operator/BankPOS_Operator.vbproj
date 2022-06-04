@@ -92,10 +92,18 @@
     <Content Include="App_Data\SiteData_log.ldf">
       <DependentUpon>SiteData.mdf</DependentUpon>
     </Content>
+    <Content Include="Main.aspx" />
     <Content Include="MainOpr.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Main.aspx.designer.vb">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.vb">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
