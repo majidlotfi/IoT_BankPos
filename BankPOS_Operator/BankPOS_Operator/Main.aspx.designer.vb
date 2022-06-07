@@ -59,6 +59,15 @@ Partial Public Class Main
     Protected WithEvents frmNewOpr As Global.System.Web.UI.WebControls.FormView
 
     '''<summary>
+    '''grpOthOpr control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents grpOthOpr As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
     '''pnlPreview control.
     '''</summary>
     '''<remarks>

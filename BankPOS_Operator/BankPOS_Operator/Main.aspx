@@ -13,7 +13,32 @@
             margin-right: 10%;
             vertical-align: top;
         }
+        fieldset input[type=text] {
+            font-size:12px;
+            background-color:#FFFFCC;
+            font-family:Tahoma;
+            height:15px;
+            margin:2px;
+        }
+        fieldset input[type=button] {
+            text-align:center;
+            font-size:10px;
+            height:25px;
+            margin:2px;
+            background-color:lightgray;
+            font-family:Tahoma;
+        }
+        fieldset legend {
+            font-size:12px;
+            font-weight:bold;
+            color:rebeccapurple;
+        }
+        fieldset {
+            width:270px;
+            font-size:10px;
+        }
     </style>
+    <script src="Scripts/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <form id="frmMain" runat="server">
@@ -23,7 +48,7 @@
         </div>
         <div style="margin: 10px;">
             <div class="Blocks" style="border: 1px solid #808080; width: 300px; float: right;">
-                <p class="Titr" style="text-align: center; padding: 5px; background-color: beige; margin:0px">
+                <p class="Titr" style="text-align: center; padding: 5px; background-color: beige; margin: 0px">
                     عملياتهاي قابل پردازش
                 </p>
                 <fieldset id="grpNewPCPos" runat="server" style="display: block">
@@ -77,13 +102,18 @@
                         <RowStyle BackColor="#EEEEEE" ForeColor="Black" />
                     </asp:FormView>
                 </fieldset>
+                <fieldset id="grpOthOpr" runat="server" style="display: block">
+                    <legend class="Titr">ساير عمليات ها</legend>
+                    <input id="btnReadPCPos" type="button" style="width:220px" value="دريافت اطلاعات از دستگاه هاي پوز" />
+                    <input id="btnReadOprs" type="button" style="width:220px" value="دريافت اطلاعات از اپراتورها" />
+                </fieldset>
             </div>
             <div class="Blocks" style="width: auto; margin-right: 310px; overflow: scroll; height: 400px;">
-                <fieldset id="pnlPreview" runat="server" style="float:right; width:200px; height:200px; overflow:scroll;">
+                <fieldset id="pnlPreview" runat="server" style="float: right; width: 200px; height: 200px; overflow: scroll;">
                     <legend class="Titr">دستگاه هاي كارتخوان</legend>
                     <asp:ListView ID="lstPcPos" runat="server" DataKeyNames="PCPosId" DataSourceID="AdpPcPos">
                         <AlternatingItemTemplate>
-                            <li style="background-color: #FFFFFF;color: #284775;">پوز :
+                            <li style="background-color: #FFFFFF; color: #284775;">پوز :
                                 <asp:Label ID="TitleLabel" runat="server" Text='<%# Eval("Title") %>' />
                             </li>
                         </AlternatingItemTemplate>
@@ -91,10 +121,10 @@
                             هيچ دستگاه كارتخواني معرفي نشده است - ليست خالي مي باشد.
                         </EmptyDataTemplate>
                         <ItemSeparatorTemplate>
-<br />
+                            <br />
                         </ItemSeparatorTemplate>
                         <ItemTemplate>
-                            <li style="background-color: #E0FFFF;color: #333333;">پوز :
+                            <li style="background-color: #E0FFFF; color: #333333;">پوز :
                                 <asp:Label ID="TitleLabel" runat="server" Text='<%# Eval("Title") %>' />
                             </li>
                         </ItemTemplate>
@@ -102,21 +132,21 @@
                             <ul id="itemPlaceholderContainer" runat="server" style="font-family: Verdana, Arial, Helvetica, sans-serif;">
                                 <li runat="server" id="itemPlaceholder" />
                             </ul>
-                            <div style="text-align: center;background-color: #5D7B9D;font-family: Verdana, Arial, Helvetica, sans-serif;color: #FFFFFF;">
+                            <div style="text-align: center; background-color: #5D7B9D; font-family: Verdana, Arial, Helvetica, sans-serif; color: #FFFFFF;">
                             </div>
                         </LayoutTemplate>
                         <SelectedItemTemplate>
-                            <li style="background-color: #E2DED6;font-weight: bold;color: #333333;">PCPosId:
+                            <li style="background-color: #E2DED6; font-weight: bold; color: #333333;">PCPosId:
                                 <asp:Label ID="TitleLabel" runat="server" Text='<%# Eval("Title") %>' />
                             </li>
                         </SelectedItemTemplate>
                     </asp:ListView>
                 </fieldset>
-                <fieldset id="grpOprList" runat="server" style="float:right; width:200px; height:200px; overflow:scroll;">
+                <fieldset id="grpOprList" runat="server" style="float: right; width: 200px; height: 200px; overflow: scroll;">
                     <legend class="Titr">اپراتور ها</legend>
                     <asp:ListView ID="lstOprList" runat="server" DataKeyNames="OperatorId" DataSourceID="AdpOprList">
                         <AlternatingItemTemplate>
-                            <li style="background-color: #FFFFFF;color: #284775;">اپراتور :
+                            <li style="background-color: #FFFFFF; color: #284775;">اپراتور :
                                 <asp:Label ID="TitleLabel" runat="server" Text='<%# Eval("Title") %>' />
                             </li>
                         </AlternatingItemTemplate>
@@ -124,10 +154,10 @@
                             هيچ اپراتوري معرفي نشده است - ليست خالي مي باشد.
                         </EmptyDataTemplate>
                         <ItemSeparatorTemplate>
-<br />
+                            <br />
                         </ItemSeparatorTemplate>
                         <ItemTemplate>
-                            <li style="background-color: #E0FFFF;color: #333333;">اپراتور :
+                            <li style="background-color: #E0FFFF; color: #333333;">اپراتور :
                                 <asp:Label ID="TitleLabel" runat="server" Text='<%# Eval("Title") %>' />
                             </li>
                         </ItemTemplate>
@@ -135,11 +165,11 @@
                             <ul id="itemPlaceholderContainer" runat="server" style="font-family: Verdana, Arial, Helvetica, sans-serif;">
                                 <li runat="server" id="itemPlaceholder" />
                             </ul>
-                            <div style="text-align: center;background-color: #5D7B9D;font-family: Verdana, Arial, Helvetica, sans-serif;color: #FFFFFF;">
+                            <div style="text-align: center; background-color: #5D7B9D; font-family: Verdana, Arial, Helvetica, sans-serif; color: #FFFFFF;">
                             </div>
                         </LayoutTemplate>
                         <SelectedItemTemplate>
-                            <li style="background-color: #E2DED6;font-weight: bold;color: #333333;">PCPosId:
+                            <li style="background-color: #E2DED6; font-weight: bold; color: #333333;">PCPosId:
                                 <asp:Label ID="TitleLabel" runat="server" Text='<%# Eval("Title") %>' />
                             </li>
                         </SelectedItemTemplate>
