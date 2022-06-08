@@ -39,6 +39,33 @@
         }
     </style>
     <script src="Scripts/jquery-3.6.0.min.js"></script>
+    <script src="Scripts/persian-date.js"></script>
+    <script type="text/javascript">
+        function ReadPCPos() {
+            var tarikh = new persianDate();
+            var dt = prompt('لطفا تاريخ را وارد نمائيد', tarikh.toLocale('en').format().substring(0, 10));
+            if (dt.length != 10) { alert('تاريخ صحيح نمي باشد'); return; }
+            confirm("پس از تائيد عمليات شروع مي شود ، لطفا تا پيام پايان منتظر بمانيد");
+            $.ajax({
+                url: "/MainOpr.aspx?Dater=" & dt & "&op=GetPCPosData",
+                context: document.body
+            }).done(function () {
+                alert("عمليات پايان يافت");
+            });
+        }
+        function ReadOprs() {
+            var tarikh = new persianDate();
+            var dt = prompt('لطفا تاريخ را وارد نمائيد', tarikh.toLocale('en').format().substring(0, 10));
+            if (dt.length != 10) { alert('تاريخ صحيح نمي باشد'); return; }
+            confirm("پس از تائيد عمليات شروع مي شود ، لطفا تا پيام پايان منتظر بمانيد");
+            $.ajax({
+                url: "/MainOpr.aspx?Dater=" & dt & "&op=GetSumData",
+                context: document.body
+            }).done(function () {
+                alert("عمليات پايان يافت");
+            });
+        }
+    </script>
 </head>
 <body>
     <form id="frmMain" runat="server">
@@ -104,8 +131,8 @@
                 </fieldset>
                 <fieldset id="grpOthOpr" runat="server" style="display: block">
                     <legend class="Titr">ساير عمليات ها</legend>
-                    <input id="btnReadPCPos" type="button" style="width:220px" value="دريافت اطلاعات از دستگاه هاي پوز" />
-                    <input id="btnReadOprs" type="button" style="width:220px" value="دريافت اطلاعات از اپراتورها" />
+                    <input id="btnReadPCPos" type="button" style="width:220px" value="دريافت اطلاعات از دستگاه هاي پوز" onclick="ReadPCPos()" />
+                    <input id="btnReadOprs" type="button" style="width:220px" value="دريافت اطلاعات از اپراتورها" onclick="ReadOprs()" />
                 </fieldset>
             </div>
             <div class="Blocks" style="width: auto; margin-right: 310px; overflow: scroll; height: 400px;">

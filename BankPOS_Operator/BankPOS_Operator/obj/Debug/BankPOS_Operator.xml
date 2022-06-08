@@ -91,15 +91,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:BankPOS_Operator.Main._btnReadPCPos">
-<summary>
-btnReadPCPos control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
 <member name="F:BankPOS_Operator.Main._pnlPreview">
 <summary>
 pnlPreview control.
